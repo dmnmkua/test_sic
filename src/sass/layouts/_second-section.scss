@@ -1,7 +1,7 @@
 .second-section {
   padding: 114px 0;
-  position: relative;
-  z-index: 1;
+  // position: relative;
+  // z-index: 1;
   background: url(../img/ewb-international_9_1.png) center center no-repeat;
   background-size: cover;
   color: #fff;
@@ -11,9 +11,9 @@
     display: -ms-flex;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
-    @media screen and (max-width: 1920px) {
+    @media screen and (max-width: 1200px) {
       flex-direction: column;
     }
   }
@@ -26,14 +26,19 @@
 .second-section__wrap-img {
   // position: relative;
   // left: -400px;
-  transform: translateX(-330px);
-  width: 500px;
-  position: relative;
+  // transform: translateX(-330px);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  // position: relative;
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 1200px) {
     order: 1;
     width: 100%;
-    transform: translateX(0);
+    transform: translateY(0);
+    position: relative;
   }
 }
 
@@ -41,7 +46,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   font-size: 1.125rem;
@@ -64,9 +69,10 @@
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   position: relative;
+  width: 58%;
 
   &:before {
     content: "";
@@ -78,13 +84,17 @@
     right: 0;
   }
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 1200px) {
     margin-bottom: 20px;
 
     &:before {
       content: "";
       width: 100%;
     }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
   }
 }
 
