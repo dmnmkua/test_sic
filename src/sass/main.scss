@@ -1,0 +1,27 @@
+//  Libs
+@import "../libs/normalize/normalize";
+
+//  Fonts Nexa
+@import "../fonts/Nexa/stylesheet";
+
+//  Font awesome
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+//  Font PT Sans
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+//  Adjustment
+@import "./adjusment";
+
+//  Components
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/circle";
+
+//  Layouts
+@import "./layouts/first-section";
+@import "./layouts/second-section";
+@import "./layouts/third-section";
+@import "./layouts/fourth-section";
+@import "./layouts/fifth-section";
+@import "./layouts/six-section";

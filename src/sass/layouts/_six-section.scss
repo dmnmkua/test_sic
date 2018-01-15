@@ -1,0 +1,142 @@
+.six-section {
+  background: #fff url(../img/ewb-international_9_3.png) center center no-repeat;
+  background-size: cover;
+  padding: 70px 0 25px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 50px 0 20px;
+  }
+}
+
+.footer-wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.footer-logo {
+  max-width: 440px;
+  flex-shrink: 0;
+  margin-right: 40px;
+
+  @media screen and (max-width: 1000px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.footer-logo__link {
+  display: block;
+}
+
+.footer-logo__img {
+  width: 100%;
+}
+
+.footer-links {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-col {
+  width: 33%;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.footer-col:not(:last-child) {
+  @media screen and (max-width: 500px) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer-col__title {
+  font-family: "Nexa", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 170px;
+    height: 1px;
+    background: #3b84ff;
+  }
+
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+    width: 100%;
+
+    &:before {
+      content: "";
+      width: 100%;
+    }
+  }
+}
+
+.footer-col__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Nexa", sans-serif;
+  font-weight: lighter;
+  font-size: 1.25rem;
+}
+
+.footer-col__item {
+  padding: 0;
+  margin: 0;
+  margin-left: 13px;
+
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.footer-col__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-col__link {
+  color: #fff;
+  text-decoration: none;
+  transition: color .1s;
+  will-change: color;
+
+  &:hover {
+    color: #101033;
+  }
+}
+
+.copyright {
+  font-family: "Nexa", sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;
+  font-size: 1.125rem;
+}

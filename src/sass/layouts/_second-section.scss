@@ -1,0 +1,124 @@
+.second-section {
+  padding: 114px 0;
+  position: relative;
+  z-index: 1;
+  background: url(../img/ewb-international_9_1.png) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1920px) {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 50px 0;
+  }
+}
+
+.second-section__wrap-img {
+  // position: relative;
+  // left: -400px;
+  transform: translateX(-330px);
+  width: 500px;
+  position: relative;
+
+  @media screen and (max-width: 1920px) {
+    order: 1;
+    width: 100%;
+    transform: translateX(0);
+  }
+}
+
+.second-section__text-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.125rem;
+
+  @media screen and (max-width: 1920px) {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.second-section__img {
+
+  @media screen and (max-width: 1920px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.second-section__text-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 3px;
+    width: 1180px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 1920px) {
+    margin-bottom: 20px;
+
+    &:before {
+      content: "";
+      width: 100%;
+    }
+  }
+}
+
+.second-section__title {
+  font-family: "Nexa", sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 28px;
+
+  span {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #00b0ff;
+  }
+}
+
+.second-section__subtitle {
+  font-size: 1.875rem;
+  font-family: "Nexa", sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 28px;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.second-section__descr {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 28px;
+}

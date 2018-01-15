@@ -1,0 +1,51 @@
+.fourth-section {
+  background: #ededed url(../img/Layer8.png) center center no-repeat;
+  background-size: cover;
+  padding: 105px 0;
+
+  @media screen and (max-width: 1200px) {
+    padding: 50px 0;
+  }
+}
+
+.fourth-section .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourth-section__text {
+  text-align: center;
+  font-family: "Nexa", sans-serif;
+  font-weight: lighter;
+  color: #626262;
+  font-size: 1.712rem;
+  margin: 0;
+  margin-bottom: 20px;
+
+  .first-span {
+    font-weight: bold;
+  }
+
+  .second-span {
+    font-weight: bold;
+    color: #00b0ff;
+    font-size: 2rem;
+  }
+}
+
+.fourth-section__btn {
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: none;
+  font-size: 1.875rem;
+  color: #fff;
+  font-family: "Nexa", sans-serif;
+  font-weight: bold;
+  padding: 15px 42px;
+  background: #101033;
+  line-height: .9;
+  cursor: pointer;
+}
